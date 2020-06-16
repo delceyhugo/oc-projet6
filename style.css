@@ -1,0 +1,150 @@
+/* Général */
+body {
+    color: #F0EDEE;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background: radial-gradient(#323232, #1d1d1d);
+}
+
+h1 {
+    margin: 30px 0px 25px 0px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+button {
+    margin: auto;
+}
+
+input[type="text"] {
+    background-color: rgb(184, 184, 184);
+}
+
+
+/* Landing page */
+
+#player1-name,
+#player2-name,
+#player1-hp,
+#player2-hp {
+    width: 80%;
+    margin: auto;
+}
+
+.carousel {
+    width: 40%;
+    margin: auto;
+}
+.carousel-item img {
+    height: 55px;
+    user-select: none;
+}
+#carouselPlayer2 img{
+    transform: scaleX(-1);
+}
+#board {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 0;
+}
+#landing-page {
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(#323232, #1d1d1d);
+    position: absolute;
+    z-index: 1;
+}
+
+
+/* Board */
+
+#board-x {
+    width: 5vw;
+}
+#board-y {
+    width: 5vw;
+}
+.case {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("assets/textures/floor/floor_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+}
+.case:hover {
+    background: rgb(117, 117, 117);;
+}
+.player-param {
+    padding: 50px 25px;
+    margin: 10px 12vw 20px 12vw;
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.096);
+    border-radius: 10px;
+}
+h2:first-child {
+    margin: 25px 0px 8px 0px !important;
+}
+.player1,
+.player2 {
+    height: 120% !important;
+    overflow: visible;
+    margin-bottom: 15px;
+    user-select: none;
+}
+.player2{
+    transform: scaleX(-1);
+}
+.weapons {
+    height: 80%;
+    user-select: none;
+}
+
+.case-empty {
+    background-color: black;
+    background-image: url("assets/textures/wall/wall_mid.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+.game-screen {
+    height: 100vh;
+}
+
+.case-empty:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+.round-numero,
+.round-indicator {
+    display: inline;
+}
+.round-numero{
+    margin-right: 45vh;
+}
+
+.highlight{
+    opacity: 60%;
+}
+.highlight:hover{
+    background-color: rgb(0, 128, 0);
+}
+.defense{
+    margin-bottom: 15px;
+}
+.info-player{
+    padding: 1px 0px 20px 0px;
+    margin-right: 40px;
+    margin-left: 40px;
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.096);
+    border-radius: 10px;
+}
+#ui-player1, #ui-player2{
+    margin-top: 40vh;
+    justify-content: center;
+    align-content: center;
+}
